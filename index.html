@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livro Interativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="book">
+    <!-- Capa -->
+    <div class="page" id="cover">
+      <div class="cover">
+        <h1>Para o Meu amoreco</h1>
+        <img src="ccccapa.jpg" alt="Capa do Livro">
+        <h2>- da vavazinho para ana com todo o amor dela</h2>
+        <h3>pt1</h3>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <!-- Páginas do Livro -->
+    <div class="page double-page" id="page-1">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="left-page">
+        <img src="anao_bombadinho.png" alt="Imagem 1">
+        <p>Desde que a gnt n era nada uma p outra, eu ja amava conversar cntg, por mais fechada q eu fosse, em calls jogando qqr jogo perdido tu sempre me tirava sorrisos e risadas genuinas, tu fez uma fase ruim desse ano ser suportavel, e cada dia q passa tu consegue me fazer mais feliz.</p>
+      </div>
+      <div class="right-page">
+        <img src="conversa.png" alt="Imagem 2">
+        <p>Quando n demorou 1 hora de papo pra ser o suficiente pra me fazer baixar o jogo q eu mais fazia bullying (q eu to jogando ate hoje).</p>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <div class="page double-page" id="page-2">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="left-page">
+        <img src="wpp.jfif" alt="Imagem 3">
+        <p>Quando n demorou mt tempo pra nos virarmos bestis uauuu</p>
+      </div>
+      <div class="right-page">
+        <img src="mae.jpg" alt="Imagem 4">
+        <p>Quando eu ajudei a pilhar sua cabeca pra vir pra pf sozinha, e mandei a mae n falar q eu mandei mnsg p ela (enchi o saco da coitada pra te trazer pra ca logo)</p>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <!-- Novas Páginas -->
+    <div class="page double-page" id="page-3">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="left-page">
+        <img src="classicuda.jpeg" alt="Imagem 5">
+        <p>Quando tu chegou em pf e soltou a bomba bombastica</p>
+      </div>
+      <div class="right-page">
+        <img src="pe.jpeg" alt="Imagem 6">
+        <p>e sla oq porra tu fez cmg dps desses dias mas eu agradeco profundamente</p>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <div class="page double-page" id="page-4">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="left-page">
+        <img src="filgho.jpeg" alt="Imagem 7">
+        <p>Quando tivemos nosso primeiro filho (n durou coitado)</p>
+      </div>
+      <div class="right-page">
+        <img src="caixa.jpeg" alt="Imagem 8">
+        <p>Quando eu parei no meio do teu primeiro presente q prestava, fiquei olhando e pensei ''eu to maluca'' com as mao na cabeça (o maluca era de amores por tu)</p>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <div class="page double-page" id="page-5">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="left-page">
+        <img src="mamae.jpeg" alt="Imagem 9">
+        <p>Quando manuelas ficou sabendo e teve uma reação q eu n tinha imaginado</p>
+      </div>
+      <div class="right-page">
+        <img src="mao.jpeg" alt="Imagem 10">
+        <p>Quando voce me fez caminhar por poa city, e quando eu fui embora eu chorava de soluçar dentro do onibus (e fizemos um piquenique mto mto lwgal)</p>
+      </div>
+      <button class="next" onclick="nextPage()">➡</button>
+    </div>
+
+    <!-- Página Final -->
+    <div class="page" id="final">
+      <button class="prev" onclick="prevPage()">⬅</button>
+      <div class="end">
+        <h1>Fim.</h1>
+        <h3>Obrigada por cada momentinho q tive cntg, cada risada q tu me tirou, cada caminhada, cada conversa, cada play. Obrigada por ser o motivo dos meus melhores sorrisos. Tu faz tudo ser mais incrivel, mais intenso. Tu pe minha maior alegria, minha maior sorte. Cntg a minha vida é mais vida e vivida, eu te amo com cada pedaçinho meu!! Eu pretendo fazer mais livrinhos em resumo da nossa ''linha do tempo'', acho q da pra chamr de linha do tempo. Enfim, obrigada por cada momento,e espero viver mais infitos cntg, passar minha vida toda cntg do meu lado.  ❤️</h3>
+        <div class="ultimg">
+          <img src="final.jpeg" alt="Imagem 5" width="20%">
+          <h2>Eu te amo demais amorecos!!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

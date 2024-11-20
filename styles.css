@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: #e7dfd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.book {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  border: 2px solid #5c4033;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fefefe;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgb(136, 151, 153);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease, left 0.5s ease;
+}
+
+.page.active {
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.double-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-page, .right-page {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  margin: 5px;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #5c4033;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5b686d;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #5b686d;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.ultimg{
+  text-align: center;
+}
+
+.end{
+  text-align: center;
+}
